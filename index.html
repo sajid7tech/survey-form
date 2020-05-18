@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <h1 id="title">Internship  Survey Form</h1>
+    <h3 id="description">Just a quick survey of your internship experience</h3>
+
+    <form id="survey-form" class="main_div">
+
+        <div class="form-element"> 
+            <label for="name" id="name-label" >Name : </label>
+            <input id="name" type="text" placeholder="NAME" required>
+        </div>
+        
+        <div class="form-element"> 
+            <label for="email" id="email-label" >Email : </label>
+            <input id="email" type="email" placeholder="Email" required>
+        </div>
+        
+        <div class="form-element"> 
+            <label for="number" id="number-label">Age : </label>
+            <input id="number" type="number" min="10" max="150"placeholder="Enter your age at dec 2020 " required>
+        </div>
+            
+        <div class="form-element"> 
+            <label for="dropdown">What is your job description:</label>
+
+            <select  id="dropdown">
+                <option >Select:</option>
+                <option value="Front-end">Front-end developer</option>
+                <option value="Back-end">Back-end developer</option>
+                <option value="Database">Database management developer</option>
+                <option value="Full stack">Full stack developer</option>
+                <option value="React">React js Developer</option>
+            </select>
+        </div>
+
+        <div class="form-element"> 
+            <label >How was your experience:</label>
+            <label class="container">Excellent
+                <input type="radio" name="experience">
+                <span class="checkmark"></span>
+            </label>
+              <label class="container">Good
+                <input type="radio" name="experience">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Fair
+                <input type="radio" name="experience">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Bad
+                <input type="radio" name="experience">
+                <span class="checkmark"></span>
+              </label>
+        </div>
+
+        <div class="form-element">
+            <label>What have you learn during the internship:</label>
+            <label class="containers">Leadership 
+              <input type="checkbox" value="1">
+              <span class="checkmarks"></span>
+            </label>
+            <label class="containers"  value="2">Team work
+              <input type="checkbox">
+              <span class="checkmarks"></span>
+            </label>
+            <label class="containers" value="3">Patience towards work
+              <input type="checkbox">
+              <span class="checkmarks"></span>
+            </label>
+            <label class="containers" value="4">Time management
+              <input type="checkbox">
+              <span class="checkmarks"></span>
+            </label>
+            <label class="containers" value="0">None
+                <input type="checkbox" >
+                <span class="checkmarks"></span>
+              </label>    
+        </div>
+        <div class="form-element">
+            <label>Your feedback is really important:</label>
+            <br>
+            <textarea name="message" rows="10" cols="107"></textarea>
+        </div>
+
+        <div class="form-element" class="pos">
+            <input class="submit" type="submit" id="submit"> </input>
+        </div>
+        
+  
+    </form>
+</body>
+</html>
